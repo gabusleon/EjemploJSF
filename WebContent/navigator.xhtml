@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="US-ASCII" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>JSF 2.0</title>
+</h:head>
+<h:body>
+	<p>
+		No existe bean, outcome="page1" (h:link)
+		<h:link value="Estatica" outcome="page1" />
+	</p>
+	<p>V&aacute;lidas: page1 (directo), pr1 (mediante regla r1), 
+	pr2 (regla r2:si logeado rule2, sino a rule1), * (errorPage)</p>
+	<h:form>
+		<p>
+			<h:inputText value="#{navigator.page}" />
+			<h:selectBooleanCheckbox value="#{navigator.login}" />
+			Logeado
+		</p>
+		<h:commandButton value="Entrar" action="#{navigator.process}">
+		</h:commandButton>
+	</h:form>
+</h:body>
+</html>
