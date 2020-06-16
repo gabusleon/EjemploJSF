@@ -25,7 +25,6 @@ public class Bean {
 	this.map.put("uno", "1");
     }
     
-    //getter & setters
     public int method(int v) {
 	return v * 3;
     }
@@ -34,6 +33,7 @@ public class Bean {
 	return 2;
     }
 
+    //getter & setters
     public String getName() {
 	return name;
     }
